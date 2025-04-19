@@ -12,8 +12,8 @@ fn normal() {
 }
 
 fn blazingly_fast() {
-    let image1 = image::open("riddle1.jpg").expect("File not found");
-    let image2 = image::open("riddle2.png").expect("File not found");
+    let image1 = image::open("og_file.jpg").expect("og_file.jpg not found");
+    let image2 = image::open("copy.png").expect("copy.png not found");
     let (width, height) = image1.dimensions();
     let result_image: RgbaImage = compare_images(image1, image2, width, height);
     result_image
